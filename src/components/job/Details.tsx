@@ -1,5 +1,5 @@
 import { faBriefcase, faCheck, faClock, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
-import { Description, List } from "../common";
+import { Description, List, ShareList } from "../common";
 import IconInfo from "./IconInfo";
 import { IJob } from "./types";
 
@@ -22,6 +22,7 @@ export const Details = (job: IJob) => {
       <List list={workInfoList} Component={IconInfo} />
       <Description>{job.description}</Description>
       <List list={perksList} Component={IconInfo} />
+      <ShareList />
     </div>
   );
 };

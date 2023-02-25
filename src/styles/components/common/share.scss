@@ -1,0 +1,15 @@
+.share {
+  display: flex;
+  gap: rem(20);
+  align-items: center;
+  padding-top: rem(45);
+  &__title {
+    @include font(rem(20), rem(24));
+  }
+  &__item {
+    @include font(rem(20), rem(24));
+  }
+  .list {
+    padding-top: 0 !important;
+  }
+}

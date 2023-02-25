@@ -7,4 +7,5 @@ export interface IDescription {
 export interface IList<T> {
   list: T[];
   Component: React.ComponentType<T>;
+  inline?: boolean;
 }

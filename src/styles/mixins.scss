@@ -13,3 +13,11 @@
   font-family: $font-family;
   font-style: $font-style;
 }
+
+@mixin line-limit($line-count: 1) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}

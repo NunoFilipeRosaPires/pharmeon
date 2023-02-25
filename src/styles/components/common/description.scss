@@ -1,3 +1,4 @@
 .description {
   @include font(rem(20), rem(26));
+  @include line-limit(4);
 }
