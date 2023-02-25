@@ -1,0 +1,17 @@
+.icon-info {
+  display: flex;
+  gap: rem(12);
+  &__icon {
+    @include font(rem(20), rem(24));
+    &--small {
+      @include font(rem(18), rem(25));
+      color: $color-blue-4;
+    }
+  }
+  &__description {
+    @include font(rem(20), rem(24), $font-weight: 600);
+    &--small {
+      @include font(rem(18), rem(25));
+    }
+  }
+}

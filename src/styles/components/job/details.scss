@@ -5,8 +5,16 @@
   background: $color-transparent
     linear-gradient(21deg, $color-blue-1 0%, $color-blue-2 71%, $color-blue-3 95%, $color-blue-4 100%) 0% 0% no-repeat
     padding-box;
+  color: $color-white;
   &__title {
     @include font(rem(32), rem(40), $font-family: $font-family-secondary);
-    color: $color-white;
+  }
+
+  .list {
+    padding-top: rem(16);
+  }
+  .description {
+    padding-top: rem(30);
+    padding-bottom: rem(16);
   }
 }
