@@ -1,0 +1,5 @@
+$base-font-size: 16;
+
+@function rem($pixels) {
+  @return calc($pixels / $base-font-size) + rem;
+}
