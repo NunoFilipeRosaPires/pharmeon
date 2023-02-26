@@ -17,6 +17,10 @@ h2 {
   @include font(rem(28), rem(34), $font-family: $font-family-secondary);
 }
 
+h3 {
+  @include font(rem(20), rem(24), $font-family: $font-family-secondary);
+}
+
 ul {
   list-style-type: none;
 }
@@ -43,11 +47,10 @@ button {
 
 @media screen and (min-width: $lg) {
   h1 {
-    @include font(rem(44), rem(61), $font-family: $font-family-secondary);
+    @include font(rem(40), rem(61), $font-family: $font-family-secondary);
   }
-
   h2 {
-    @include font(rem(48), rem(61), $font-family: $font-family-secondary);
+    @include font(rem(40), rem(61), $font-family: $font-family-secondary);
   }
 
   .container {
@@ -57,6 +60,9 @@ button {
 
 @media screen and (min-width: $xl) {
   h1 {
+    @include font(rem(48), rem(61), $font-family: $font-family-secondary);
+  }
+  h2 {
     @include font(rem(48), rem(61), $font-family: $font-family-secondary);
   }
 

@@ -19,8 +19,14 @@
 
 @media screen and (min-width: $lg) {
   .job-details {
+    background: $color-transparent
+      linear-gradient(26deg, $color-blue-1 0%, $color-blue-2 62%, $color-blue-3 89%, $color-blue-4 100%) 0% 0% no-repeat
+      padding-box;
+    margin-right: rem(18);
     &__row {
-      display: flex;
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: rem(54);
       gap: rem(54);
     }
     &__column {

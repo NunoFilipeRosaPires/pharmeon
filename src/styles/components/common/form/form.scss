@@ -1,6 +1,7 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: rem(30);
   gap: rem(30);
 
   & > .button {

@@ -1,0 +1,82 @@
+.job-resume {
+  padding-top: rem(80);
+  padding-bottom: rem(69);
+  margin-top: rem(50);
+  margin-left: rem(16);
+  color: $color-dark;
+  border-radius: 40px 0px 0px 40px;
+  background: $color-transparent
+    linear-gradient(
+      38deg,
+      rgba($color-blue-1, 0.14) 0%,
+      rgba($color-blue-2, 0.14) 19%,
+      rgba($color-blue-3, 0.14) 85%,
+      rgba($color-blue-4, 0.14) 100%
+    )
+    0% 0% no-repeat padding-box;
+  &__position {
+    padding-bottom: rem(36);
+  }
+
+  .description {
+    padding-top: rem(25);
+    padding-bottom: rem(28);
+    max-width: rem(641);
+  }
+  .card {
+    padding-top: rem(29);
+    padding-bottom: rem(54);
+    border-radius: 20px;
+  }
+  .list {
+    gap: rem(27);
+  }
+}
+
+@media screen and (min-width: $md) {
+  .job-resume {
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: rem(15) rem(64);
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .job-resume {
+    padding-top: rem(118);
+    padding-bottom: rem(119);
+    margin-left: rem(18);
+    margin-top: rem(68);
+    background: $color-transparent
+      linear-gradient(
+        40deg,
+        rgba($color-blue-1, 0.14) 0%,
+        rgba($color-blue-2, 0.14) 19%,
+        rgba($color-blue-3, 0.14) 85%,
+        rgba($color-blue-4, 0.14) 100%
+      )
+      0% 0% no-repeat padding-box;
+    &__title {
+      text-align: center;
+    }
+
+    .description {
+      padding-top: rem(32);
+      padding-bottom: rem(50);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card {
+      padding-top: rem(30);
+      padding-bottom: rem(30);
+    }
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: rem(15) rem(64);
+    }
+  }
+}

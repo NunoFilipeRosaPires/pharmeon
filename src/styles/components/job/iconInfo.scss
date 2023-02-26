@@ -1,6 +1,9 @@
 .icon-info {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: rem(12);
   gap: rem(12);
+  width: fit-content;
   &__icon {
     @include font(rem(20), rem(24));
     &--small {

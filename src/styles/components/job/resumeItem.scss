@@ -1,0 +1,24 @@
+.job-resume-item {
+  display: flex;
+  gap: rem(15);
+  &__key {
+    flex: 2;
+    @include font(rem(16), rem(24), $font-family: $font-family-quartenary, $font-weight: bold);
+  }
+  &__value {
+    flex: 3;
+    @include font(rem(16), rem(24), $font-family: $font-family-quartenary);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .job-resume-item {
+    &__key {
+      flex: 2;
+    }
+    &__value {
+      flex: 5;
+      @include font(rem(16), rem(24), $font-family: $font-family-quartenary);
+    }
+  }
+}

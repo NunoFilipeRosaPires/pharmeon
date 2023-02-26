@@ -1,8 +1,11 @@
 .share {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: rem(20);
   gap: rem(20);
   align-items: center;
   padding-top: rem(45);
+  width: fit-content;
   &__title {
     @include font(rem(20), rem(24));
   }

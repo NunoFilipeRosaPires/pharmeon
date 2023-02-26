@@ -1,9 +1,11 @@
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: rem(12);
   gap: rem(12);
   &--inline {
-    flex-direction: row;
+    grid-auto-flow: column;
+    grid-gap: rem(20);
     gap: rem(20);
   }
 }

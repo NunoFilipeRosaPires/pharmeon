@@ -1,4 +1,4 @@
-import { JobDetails } from "./components/job";
+import { JobDetails, JobResume } from "./components/job";
 import { IJob } from "./components/job/types";
 import { getJob } from "./utils";
 import "./styles/index.scss";
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <JobDetails {...data} />
+      <JobResume {...data.resume} />
     </div>
   );
 }
