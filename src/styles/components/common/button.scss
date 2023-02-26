@@ -1,0 +1,15 @@
+.button {
+  @include font(rem(18), rem(22), $font-weight: 600);
+  border-radius: 8px;
+  background-color: $color-blue-5;
+  color: $color-black;
+  padding: rem(15) rem(16) rem(14);
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  &--file {
+    background-color: $color-white;
+    border: 2px solid $color-blue-4;
+    pointer-events: none;
+  }
+}

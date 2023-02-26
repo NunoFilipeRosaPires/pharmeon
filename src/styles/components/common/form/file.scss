@@ -1,0 +1,19 @@
+.file {
+  label {
+    @include font(rem(24), rem(29), $font-weight: bold, $font-family: $font-family-tertiary, $font-style: italic);
+  }
+  input {
+    display: none;
+  }
+  &__info {
+    @include font(rem(14), rem(17), $font-family: $font-family-quartenary);
+    @include line-limit(1);
+    color: $color-black;
+    padding-top: rem(12);
+  }
+
+  .card {
+    margin-top: rem(10);
+    cursor: pointer;
+  }
+}

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IIconInfo } from "./types";
 
-const IconInfo = (props: IIconInfo) => {
+export const IconInfo = (props: IIconInfo) => {
   const { description, faIcon, variant } = props;
 
   const iconVariantClass = variant ? "icon-info__icon--" + variant : "icon-info__icon";
@@ -16,5 +16,3 @@ const IconInfo = (props: IIconInfo) => {
     </div>
   );
 };
-
-export default IconInfo;

@@ -9,11 +9,64 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  @include font(rem(32), rem(40), $font-family: $font-family-secondary);
+}
+
+h2 {
+  @include font(rem(28), rem(34), $font-family: $font-family-secondary);
+}
+
 ul {
   list-style-type: none;
 }
 
+input,
+button {
+  all: unset;
+  box-sizing: inherit;
+}
+
 .container {
+  width: 100%;
   padding: 0 rem(16);
+  margin-left: auto;
+  margin-right: auto;
   max-width: rem(540);
+}
+
+@media screen and (min-width: $md) {
+  .container {
+    max-width: rem(720);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  h1 {
+    @include font(rem(44), rem(61), $font-family: $font-family-secondary);
+  }
+
+  h2 {
+    @include font(rem(48), rem(61), $font-family: $font-family-secondary);
+  }
+
+  .container {
+    max-width: rem(960);
+  }
+}
+
+@media screen and (min-width: $xl) {
+  h1 {
+    @include font(rem(48), rem(61), $font-family: $font-family-secondary);
+  }
+
+  .container {
+    max-width: rem(1140);
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  .container {
+    max-width: rem(1320);
+  }
 }

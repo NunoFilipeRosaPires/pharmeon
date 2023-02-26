@@ -15,3 +15,13 @@
     }
   }
 }
+
+@media screen and (min-width: $lg) {
+  .icon-info {
+    &__description {
+      &--small {
+        @include font(rem(20), rem(30));
+      }
+    }
+  }
+}

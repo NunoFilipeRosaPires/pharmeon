@@ -5,46 +5,22 @@ import { Item } from ".";
 import { List as CommonList } from "../List";
 import { IShare } from "./types";
 
+const SHARE_URL = "www.google.com";
+const SHARE_TITLE = "Title!";
+const SHARE_COMPONENTS = [FacebookShareButton, TwitterShareButton, LinkedinShareButton, EmailShareButton];
+const SHARE_ICONS = [faFacebookF, faTwitter, faLinkedinIn, faEnvelope];
+
 export const List = () => {
-  const share_url = "www.google.com";
-  const socialMediaList: IShare[] = [
-    {
+  const socialMediaList: IShare[] = SHARE_COMPONENTS.map((component: React.ComponentType<any>, index: number) => {
+    return {
       args: {
-        url: share_url,
-        quote: "Facebook text!",
-        hashtag: "#pharmeon",
+        url: SHARE_URL,
+        title: SHARE_TITLE,
       },
-      Component: FacebookShareButton,
-      faIcon: faFacebookF,
-    },
-    {
-      args: {
-        url: share_url,
-        title: "Twitter title!",
-        hashtag: "#pharmeon",
-      },
-      Component: TwitterShareButton,
-      faIcon: faTwitter,
-    },
-    {
-      args: {
-        url: share_url,
-        title: "LinkedIn title!",
-        summary: "LinkedIn summary!",
-      },
-      Component: LinkedinShareButton,
-      faIcon: faLinkedinIn,
-    },
-    {
-      args: {
-        url: share_url,
-        subject: "Email title!",
-        body: "Email body!",
-      },
-      Component: EmailShareButton,
-      faIcon: faEnvelope,
-    },
-  ];
+      Component: component,
+      faIcon: SHARE_ICONS[index],
+    };
+  });
 
   return (
     <div className="share">

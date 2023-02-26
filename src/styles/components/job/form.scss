@@ -1,0 +1,24 @@
+.job-form {
+  padding-top: rem(48);
+  &__title {
+    padding-bottom: rem(30);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .job-form {
+    padding-top: 0;
+    .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      #e-mailadres,
+      #mobiel-nummer {
+        grid-column: span 2;
+      }
+      & > .button {
+        width: fit-content;
+        padding: rem(15) rem(40) rem(14);
+      }
+    }
+  }
+}

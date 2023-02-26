@@ -7,9 +7,6 @@
     linear-gradient(21deg, $color-blue-1 0%, $color-blue-2 71%, $color-blue-3 95%, $color-blue-4 100%) 0% 0% no-repeat
     padding-box;
   color: $color-white;
-  &__title {
-    @include font(rem(32), rem(40), $font-family: $font-family-secondary);
-  }
 
   .list {
     padding-top: rem(16);
@@ -17,5 +14,24 @@
   .description {
     padding-top: rem(30);
     margin-bottom: rem(16);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .job-details {
+    &__row {
+      display: flex;
+      gap: rem(54);
+    }
+    &__column {
+      flex: 1;
+    }
+
+    .description {
+      @include font(rem(24), rem(31));
+    }
+    .list--inline {
+      justify-content: space-between;
+    }
   }
 }
