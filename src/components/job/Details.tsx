@@ -5,8 +5,6 @@ import { Description, List, ShareList } from "../common";
 import { IJob } from "./types";
 
 export const Details = (job: IJob) => {
-  console.log(job);
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const workInfoList = [
