@@ -49,6 +49,7 @@ button {
   h1 {
     @include font(rem(40), rem(61), $font-family: $font-family-secondary);
   }
+
   h2 {
     @include font(rem(40), rem(61), $font-family: $font-family-secondary);
   }
@@ -62,6 +63,7 @@ button {
   h1 {
     @include font(rem(48), rem(61), $font-family: $font-family-secondary);
   }
+
   h2 {
     @include font(rem(48), rem(61), $font-family: $font-family-secondary);
   }

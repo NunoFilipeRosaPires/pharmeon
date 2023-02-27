@@ -26,11 +26,9 @@
     &__row {
       display: grid;
       grid-auto-flow: column;
+      grid-template-columns: 1fr 1fr;
       grid-gap: rem(54);
       gap: rem(54);
-    }
-    &__column {
-      flex: 1;
     }
 
     .description {

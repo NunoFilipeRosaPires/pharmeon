@@ -29,6 +29,7 @@
     border-radius: 20px;
   }
   .list {
+    grid-gap: rem(27);
     gap: rem(27);
   }
 }
@@ -38,6 +39,7 @@
     .list {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-gap: rem(15) rem(64);
       gap: rem(15) rem(64);
     }
   }
@@ -76,6 +78,7 @@
     .list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: rem(15) rem(64);
       gap: rem(15) rem(64);
     }
   }
