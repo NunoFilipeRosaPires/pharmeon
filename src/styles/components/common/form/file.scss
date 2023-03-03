@@ -10,6 +10,7 @@
     @include line-limit(1);
     color: $color-black;
     padding-top: rem(12);
+    overflow-wrap: anywhere;
   }
 
   .card {
